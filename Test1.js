@@ -1,4 +1,9 @@
-console.log("test1");
-console.log("test3");
-console.log("test4");
-console.log("test5");
+function test(x) {
+    let str= '';
+    let length = x.length;
+    for (let i = length - 1; i >= 0; i--) {
+        str = str + x[i];
+    }
+    return str;
+}
+console.log(test('tung'));
